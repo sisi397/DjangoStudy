@@ -1,0 +1,11 @@
+<h1>회원등록</h1>
+{{res}}
+<h1>Signup</h1>
+<form method='POST' action='/mem/signup'>
+	{% csrf_token %}
+	username : <input type="text" name ="username"/>
+	email : <input type="text" name = "email"/>
+	password : <input type = "password" name ="password"/>
+	<input type = "submit"/>
+</form>
+
